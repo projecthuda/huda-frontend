@@ -1,15 +1,18 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script context="module">
+	import HudaText from "$lib/components/HudaText.svelte"
+</script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
-	</div>
-</div>
+<section>
+	<HudaText>The huda project</HudaText>
+	<HudaText style="font-size: 20px">Let's build something cool</HudaText>
+</section>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 20%;
+	}
+</style>
