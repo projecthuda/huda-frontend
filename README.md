@@ -1,11 +1,11 @@
 # Huda Svelte.js with SkeletonUI
 
-This is the frontend for the huda project initialized using a SkeletonUI. It uses TypeScript, prettier for code formatting and eslint for linting.
+This is the frontend for the huda project initialized using a SkeletonUI template. It uses TypeScript, prettier for code formatting and eslint for linting.
 You must have Node.js installed to run this server.
 
 ## Developing
 
-Install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+After installing dependencies with `npm install` (or `pnpm install` or `yarn`) start a development server:
 
 ```bash
 npm run dev
