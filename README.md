@@ -16,7 +16,7 @@ npm run dev -- --open
 
 ## SkeletonUI
 
-The documentation for SkeletonUI, which utilizes tailwind utility classes and design system capabilities to easily and quickly create pleasing and responsive interfaces, can be found at [Link Text](https://www.skeleton.dev/docs/get-started)
+The documentation for SkeletonUI, which utilizes tailwind utility classes and design system capabilities to easily and quickly create pleasing and responsive interfaces, can be found [here](https://www.skeleton.dev/docs/get-started)
 
 ## Building
 
