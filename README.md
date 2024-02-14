@@ -1,22 +1,11 @@
-# create-svelte
+# Huda Svelte.js with SkeletonUI
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+This is the frontend for the huda project initialized using a SkeletonUI. It uses TypeScript, prettier for code formatting and eslint for linting.
+You must have Node.js installed to run this server.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -24,6 +13,10 @@ npm run dev
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
+
+## SkeletonUI
+
+The documentation for SkeletonUI, which utilizes tailwind utility classes and design system capabilities to easily and quickly create pleasing and responsive interfaces, can be found at [Link Text](https://www.skeleton.dev/docs/get-started)
 
 ## Building
 
