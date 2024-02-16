@@ -1,16 +1,22 @@
-<script context="module">
-	import HudaText from "$lib/components/HudaText.svelte"
-	import { Avatar } from "@skeletonlabs/skeleton"
+<script lang="ts">
+	import HudaHeader from "$lib/components/HudaHeader.svelte"
+	import Form from "$lib/components/Form.svelte"
+	import type { FormConfig } from "$lib/types"
+	
+	const signUpForm: FormConfig = {
+		name: "Create user account",
+		fields: [
+			{ label: "Email", type: "email", placeholder: "Email" },
+			{ label: "Password", type: "password", placeholder: "Password" },
+			{ label: "Confirm password", type: "password", placeholder: "Confirm password" },
+		],
+		buttons: [
+			{ name: "Sign up" }
+		]
+	}
 </script>
 
-<section class="rounded-container-token bg-blue-950 flex flex-col items-center justify-center mx-6 my-6 p-6">
-	<Avatar 
-		src="https://drive.google.com/thumbnail?id=1m78IXxOwWH3CImj5Y2DAzfOP3eBRCcur"
-		class="hover:!cursor-pointer p-1"
-		background="bg-white"
-	/>
-	<HudaText>The huda project</HudaText>
-	<HudaText 
-		style="font-size: 20px">Let's build something cool
-	</HudaText>
+<HudaHeader />
+<section class="flex items-center justify-center w-full h-full my-10">
+	<Form formConfig={signUpForm}/>
 </section>
