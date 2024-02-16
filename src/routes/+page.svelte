@@ -6,17 +6,20 @@
 	const signUpForm: FormConfig = {
 		name: "Create user account",
 		fields: [
-			{ label: "Email", type: "email", placeholder: "Email" },
-			{ label: "Password", type: "password", placeholder: "Password" },
-			{ label: "Confirm password", type: "password", placeholder: "Confirm password" },
+			{ name: "email", label: "Email", type: "email", placeholder: "Email", value: "" },
+			{ name: "password", label: "Password", type: "password", placeholder: "Password", value: "" },
+			{ label: "Confirm password", type: "password", placeholder: "Confirm password", value: "" },
 		],
 		buttons: [
 			{ name: "Sign up" }
-		]
+		],
+		onSubmit: (values) => {
+			// Form submission logic - typically involving fetch API
+		}
 	}
 </script>
 
 <HudaHeader />
 <section class="flex items-center justify-center w-full h-full my-10">
-	<Form formConfig={signUpForm}/>
+	<Form formConfig={signUpForm} />
 </section>
